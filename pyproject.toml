@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpu-cost-meter"
+version = "0.1.0"
+description = "Find out how much your GPU inference costs and how much is wasted on idle time."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
